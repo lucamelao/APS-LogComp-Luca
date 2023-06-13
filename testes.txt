@@ -1,0 +1,149 @@
+// Impressão
+imprime("Começando a sessão de testes!");
+ 
+
+// Condicional While
+x = 0;
+enquanto (x < 5) {
+    imprime(x);
+    x = x + 1;
+}
+
+
+// Condicional If
+x = 10;
+y = 20;
+z = 30;
+se (x < y e y < z) {
+    imprime("x é menor que y e y é menor que z");
+}
+
+
+// Imprime uma soma
+x = 5;
+y = 3;
+imprime(x + y);
+
+
+// Loops condicionais
+x = 10;
+y = 20;
+se (x > y) {
+    imprime(x);
+} senao {
+    imprime(y);
+}
+
+
+// Loops condicionais
+temperatura = 25;
+se (temperatura < 20 ou temperatura > 30) {
+    imprime("A temperatura está fora do intervalo confortável");
+} senao {
+    imprime("A temperatura está dentro do intervalo confortável");
+}
+
+
+// Exemplo de uso de variáveis e múltiplas condições lógicas
+idade = 25;
+temCarteira = 1; 
+se ((idade > 17 e idade < 66) e temCarteira == 1) {
+    imprime("A pessoa pode dirigir");
+} senao {
+    imprime("A pessoa não pode dirigir");
+}
+
+
+// Exemplo de uso de variáveis e múltiplas condições lógicas
+nota1 = 7;
+nota2 = 9;
+nota3 = 6;
+media = (nota1 + nota2 + nota3) / 3;
+se (media > 5 e (nota1 > 5 e nota2 > 5 e nota3 > 5)) {
+    imprime("Aprovado");
+} senao {
+    imprime("Reprovado");
+}
+
+
+// Função que soma dois números
+funcao soma(a, b) {
+  c = a + b;
+  retorna c;
+}
+imprime(soma(1, 2));
+
+
+// Função que subtrai dois números
+funcao subtrai(a, b) {
+  c = a - b;
+  retorna c;
+}
+imprime(subtrai(1, 2));
+
+
+// Concatenação de strings
+nome = "Luca";
+sobrenome = "Melão";
+nomeCompleto = nome + " " + sobrenome;
+imprime(nomeCompleto);
+
+
+// Função que calcula a área de um retângulo
+funcao areaRetangulo(largura, altura) {
+    retorna largura * altura;
+}
+l = 5;
+h = 10;
+resultado = areaRetangulo(l, h);
+imprime(resultado);
+
+
+// Função que verifica se um número é par
+funcao ePar(n) {
+    se (n / 2 * 2 == n) {
+        resultado = 1;
+    } senao {
+        resultado = 0;
+    }
+    retorna resultado;
+}
+
+x = 6;
+se (ePar(x) == 1) {
+    imprime("É par");
+} senao {
+    imprime("É ímpar");
+}
+
+
+// Função que calcula a média de 3 números
+funcao media(a, b, c) {
+    retorna (a + b + c) / 3;
+}
+
+x = 5;
+y = 10;
+z = 15;
+resultado = media(x, y, z);
+imprime(resultado);
+
+
+// Funcão que calcula o fatorial de um número
+funcao fatorial(n) {
+    se ((n == 0) ou (n == 1)) {
+        resultado = 1;
+    } senao {
+        resultado = n * fatorial(n - 1);
+    }
+    retorna resultado;
+}
+
+x = 5;
+resultado = fatorial(x);
+imprime(resultado);
+
+
+// Descomente para testar entrada de dados via terminal
+// teste = entrada();
+// imprime(teste);

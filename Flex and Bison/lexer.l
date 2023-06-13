@@ -22,6 +22,7 @@
 "retorna"               return RETURN;
 
 [a-zA-Z][a-zA-Z0-9_]*   return IDENTIFIER;
+"[a-zA-Z][a-zA-Z0-9_]"  return STRING;
 [0-9]+"."[0-9]+         return DOUBLE;
 [0-9]+                  return INT;
 

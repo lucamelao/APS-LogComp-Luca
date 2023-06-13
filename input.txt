@@ -1,5 +1,0 @@
-imprime("Hello World!");
-funcao soma(a, b) {
-  retorna a + b;
-}
-imprime(soma(1, 2));
